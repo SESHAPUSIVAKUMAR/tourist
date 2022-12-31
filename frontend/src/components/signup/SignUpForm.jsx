@@ -88,7 +88,7 @@ class SignUpForm extends Component {
     let thisState = this;
     let stateaccess = this.state;
     alert(JSON.stringify(this.state));
-    fetch("https://india-travells-backend.onrender.com/signup", {
+    fetch("http://localhost:5000/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

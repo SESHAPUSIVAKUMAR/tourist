@@ -32,7 +32,7 @@ class Edit extends Component {
     if (keyword === "") {
       return alert("This field is required");
     }
-    fetch("https://india-travells-backend.onrender.com/search", {
+    fetch("http://localhost:5000/view/search", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ class Edit extends Component {
       }
     });
 
-    fetch("https://india-travells-backend.onrender.com/delete", {
+    fetch("http://localhost:5000/view/delete", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ class Edit extends Component {
     if (updateDoc === "") {
       return alert("Please specify the package number");
     }
-    fetch("https://india-travells-backend.onrender.com/update", {
+    fetch("http://localhost:5000/view/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

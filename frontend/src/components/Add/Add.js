@@ -105,7 +105,7 @@ class Add extends React.Component {
     ) {
       return alert("Cannot submit empty fields");
     }
-    fetch("https://india-travells-backend.onrender.com/users", {
+    fetch("http://localhost:5000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

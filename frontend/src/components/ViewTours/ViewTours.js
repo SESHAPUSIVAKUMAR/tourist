@@ -11,7 +11,7 @@ export class ViewTours extends Component {
   }
 
   async componentDidMount() {
-    return fetch("https://india-travells-backend.onrender.com")
+    return fetch("http://localhost:5000/view")
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson);
